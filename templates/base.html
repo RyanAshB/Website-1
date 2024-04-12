@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width">
+    <title>My Starting Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css')}}"/>
+</head>
+<body>
+    <div class = "ribbon">
+        <img src="{{ url_for('static', filename='straw hat.jpg')}}" class = "ribbon-image">
+        <h1 class = "ribbon-text">Tickets On Sale Now</h1>
+    </div>
+    <div class="navigation-bar">
+        <div class="menu-item">
+            <a href="/">Home</a>
+        </div>
+        <div class="menu-item">
+            <a href="/about">About Us</a>
+            <div class="sub-menu-1">
+                <a href="#jttpa">About JTTPA</a>
+                <a href="#executives">JTTPA Executives</a>
+                <a href="#chapters">JTTPA Chapters</a>
+                <a href="#donate-section">Donate</a>
+                <a href="#contact-section">Contact</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="/invitational">Invitational Series</a>
+            <div class="sub-menu-2">
+            </div> 
+        </div>
+        <div class="menu-item">
+            <a href="/super-league">Super League</a>
+            <div class="sub-menu-3">
+                <a href="#league">The League</a>
+                <a href="#clubs">Clubs</a>
+                <a href="#standings">Standings</a>
+                <a href="#draft">2024 Draft</a>
+                <a href="">MLTT</a>
+            </div> 
+        </div>
+        <div class="menu-item">
+            <a href="#">Player Ranking</a>
+            <div class="sub-menu-4">
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#">Media.</a>
+            <div class="sub-menu-5">
+                <a href="#">Video</a>
+                <a href="#">Gallery</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#">Membership</a>
+            <div class="sub-menu-6">
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#">Centres Of Excellence</a>
+            <div class="sub-menu-7">
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#">Events</a>
+            <div class="sub-menu-8">
+                <a href="#">TrueSPAC Crypto Cup 2024</a>
+                <a href="#">Player Awards & Dinner 2024</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="#">News</a>
+            <div class="sub-menu-11">
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#">Sponsors</a>
+            <div class="sub-menu-12">
+            </div> 
+        </div>
+
+    </div>
+
+    <div class="middle">
+        <div class ="middle-color">
+            {% block main %}{% endblock %}
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright Information</p>
+        <p>Address</p>
+    </div>
+</body>
+</html>
